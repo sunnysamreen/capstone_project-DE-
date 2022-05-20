@@ -1,0 +1,55 @@
+Step 1: Open Mysql server using below code.
+	
+	mysql -u anabig114218 -pBigdata123
+
+Step 2: show databases;
+
+	use anabig114218;
+
+Step 3: create tables using codes
+        a. upload create_sql_tables.sql to ftp (https://npbdh.cloudloka.com/ftp)
+        b. run the below command t create tables under
+           source create_sql_tables.sql
+
+Step 4: Remove the existing data from hdfs incase if you created below tables in the past
+          hdfs dfs -rm -r  /user/anabig114218/hive/warehouse/employees
+	hdfs dfs -rm -r  /user/anabig114218/hive/warehouse/salaries
+	hdfs dfs -rm -r  /user/anabig114218/hive/warehouse/dept_manager
+	hdfs dfs -rm -r  /user/anabig114218/hive/warehouse/dept_employee
+	hdfs dfs -rm -r  /user/anabig114218/hive/warehouse/titles
+	hdfs dfs -rm -r  /user/anabig114218/hive/warehouse/department
+
+# In case if you perform Step 4 then again go to step 3 b.
+
+
+Step 5: Now import the Mysql table to hdfs for this run the below .sh file
+
+        sh Capstone_project.sh
+
+Step 6: Run the following command.
+	
+	hive -f create_hive_table1.hql > hive_output.txt
+
+        The output of the above command will be save in the output.txt 
+
+step 7 : Run the following command
+
+        hive -f hive_analysis.sql>analysis_output.txt
+
+Step8: Run the following command
+
+	python SparkSql.py > python_output.txt
+	
+        The output of the above command will be save in the python_output.txt
+	
+	Performing EDA part on hive table using sparksql
+
+Step9: Run the following command
+
+	python spark_ml_capstone.py > python Employee_churn_prediction_output.txt
+	
+        The output of the above command will be save in the spark_ml_output.txt
+	
+	Building ML Model using sparkML 
+
+	
