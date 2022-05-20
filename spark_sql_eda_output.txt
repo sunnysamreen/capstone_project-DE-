@@ -1,0 +1,160 @@
+++
+||
+++
+++
+
++-------+------------------+------+------------+-----------+
+|dept_no|         dept_name|emp_no|   last_name| first_name|
++-------+------------------+------+------------+-----------+
+|   d001|         Marketing|110022|  Markovitch|  Margareta|
+|   d001|         Marketing|110039|    Minakawa|   Vishwani|
+|   d002|           Finance|110085|       Alpin|       Ebru|
+|   d002|           Finance|110114|  Legleitner|      Isamu|
+|   d003|   Human Resources|110183|Ossenbruggen|    Shirish|
+|   d003|   Human Resources|110228|     Sigstam|    Karsten|
+|   d004|        Production|110303|     Wegerle|  Krassimir|
+|   d004|        Production|110344|       Cools|     Rosine|
+|   d004|        Production|110386|      Kieras|       Shem|
+|   d004|        Production|110420|    Ghazalie|      Oscar|
+|   d005|       development|110511|    Hagimont|   DeForest|
+|   d005|       development|110567|    DasSarma|       Leon|
+|   d006|Quality Management|110725|     Onuegbe|  Peternela|
+|   d006|Quality Management|110765|     Hofmeyr|     Rutger|
+|   d006|Quality Management|110800|     Quadeer|     Sanjoy|
+|   d006|Quality Management|110854|       Pesch|       Dung|
+|   d007|             Sales|111035|   Kaelbling|Przemyslawa|
+|   d007|             Sales|111133|       Zhang|      Hauke|
+|   d008|          Research|111400|     Staelin|       Arie|
+|   d008|          Research|111534|      Kambil|     Hilary|
++-------+------------------+------+------------+-----------+
+only showing top 20 rows
+
++------+----------+-----------+------------------+
+|emp_no|first_name|  last_name|         dept_name|
++------+----------+-----------+------------------+
+| 10001|    Georgi|    Facello|       development|
+| 10002|   Bezalel|     Simmel|             Sales|
+| 10003|     Parto|    Bamford|        Production|
+| 10004| Chirstian|    Koblick|        Production|
+| 10005|   Kyoichi|   Maliniak|   Human Resources|
+| 10006|    Anneke|    Preusig|       development|
+| 10007|   Tzvetan|  Zielinski|          Research|
+| 10008|    Saniya|   Kalloufi|       development|
+| 10009|    Sumant|       Peac|Quality Management|
+| 10010| Duangkaew|   Piveteau|        Production|
+| 10010| Duangkaew|   Piveteau|Quality Management|
+| 10011|      Mary|      Sluis|  Customer Service|
+| 10012|  Patricio|  Bridgland|       development|
+| 10013| Eberhardt|     Terkki|   Human Resources|
+| 10014|     Berni|      Genin|       development|
+| 10015|  Guoxiang|  Nooteboom|          Research|
+| 10016|  Kazuhito|Cappelletti|             Sales|
+| 10017| Cristinel|  Bouloucos|         Marketing|
+| 10018|  Kazuhide|       Peha|        Production|
+| 10018|  Kazuhide|       Peha|       development|
++------+----------+-----------+------------------+
+only showing top 20 rows
+
++----------+-------------+---+
+|first_name|    last_name|sex|
++----------+-------------+---+
+|  Hercules|   Benzmuller|  M|
+|  Hercules|      Brendel|  F|
+|  Hercules|   Baranowski|  M|
+|  Hercules|     Barreiro|  M|
+|  Hercules|         Baer|  M|
+|  Hercules|Bernardinello|  F|
+|  Hercules|      Basagni|  M|
+|  Hercules|        Biran|  F|
+|  Hercules|    Bernatsky|  M|
+|  Hercules|         Bail|  F|
+|  Hercules|        Birge|  F|
+|  Hercules|      Bisiani|  F|
+|  Hercules|       Bodoff|  M|
+|  Hercules|        Biron|  F|
+|  Hercules|      Buchter|  M|
+|  Hercules|         Bain|  F|
+|  Hercules|         Bahr|  M|
+|  Hercules|         Baak|  M|
+|  Hercules|     Benantar|  F|
+|  Hercules|      Berstel|  F|
++----------+-------------+---+
+
++------+----------+------------+---------+
+|emp_no|first_name|   last_name|dept_name|
++------+----------+------------+---------+
+| 10002|   Bezalel|      Simmel|    Sales|
+| 10016|  Kazuhito| Cappelletti|    Sales|
+| 10034|     Bader|        Swan|    Sales|
+| 10041|       Uri|      Lenart|    Sales|
+| 10050|   Yinghua|      Dredge|    Sales|
+| 10053|    Sanjiv|    Zschoche|    Sales|
+| 10060|  Breannda| Billingsley|    Sales|
+| 10061|       Tse|      Herber|    Sales|
+| 10068|  Charlene|     Brattka|    Sales|
+| 10087|   Xinglin|     Eugenio|    Sales|
+| 10088|  Jungsoon|    Syrzycki|    Sales|
+| 10089| Sudharsan|Flasterstein|    Sales|
+| 10093|   Sailaja|     Desikan|    Sales|
+| 10095|    Hilari|      Morton|    Sales|
+| 10099|    Valter|     Sullins|    Sales|
+| 10101|     Perla|      Heyers|    Sales|
+| 10107|      Dung|        Baca|    Sales|
+| 10125|     Syozo|     Hiltgen|    Sales|
+| 10136|    Zissis|    Pintelas|    Sales|
+| 10148|    Douadi|       Azumi|    Sales|
++------+----------+------------+---------+
+only showing top 20 rows
+
++------+----------+-----------+-----------+
+|emp_no|first_name|  last_name|  dept_name|
++------+----------+-----------+-----------+
+| 10001|    Georgi|    Facello|development|
+| 10002|   Bezalel|     Simmel|      Sales|
+| 10006|    Anneke|    Preusig|development|
+| 10008|    Saniya|   Kalloufi|development|
+| 10012|  Patricio|  Bridgland|development|
+| 10014|     Berni|      Genin|development|
+| 10016|  Kazuhito|Cappelletti|      Sales|
+| 10018|  Kazuhide|       Peha|development|
+| 10021|     Ramzi|       Erde|development|
+| 10022|    Shahaf|     Famili|development|
+| 10023|     Bojan| Montemayor|development|
+| 10025| Prasadram|     Heyers|development|
+| 10027|    Divier|    Reistad|development|
+| 10028|  Domenick|   Tempesti|development|
+| 10031|   Karsten|     Joslin|development|
+| 10034|     Bader|       Swan|      Sales|
+| 10037|   Pradeep|   Makrucki|development|
+| 10040|     Weiyi|    Meriste|development|
+| 10041|       Uri|     Lenart|      Sales|
+| 10043|    Yishay|    Tzvieli|development|
++------+----------+-----------+-----------+
+only showing top 20 rows
+
++------+------+
+|emp_no|salary|
++------+------+
+| 10001| 60117|
+| 10002| 65828|
+| 10003| 40006|
+| 10004| 40054|
+| 10005| 78228|
+| 10006| 40000|
+| 10007| 56724|
+| 10008| 46671|
+| 10009| 60929|
+| 10010| 72488|
+| 10011| 42365|
+| 10012| 40000|
+| 10013| 40000|
+| 10014| 46168|
+| 10015| 40000|
+| 10016| 70889|
+| 10017| 71380|
+| 10018| 55881|
+| 10019| 44276|
+| 10020| 40000|
++------+------+
+only showing top 20 rows
+

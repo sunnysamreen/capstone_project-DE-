@@ -1,0 +1,544 @@
+++
+||
+++
+++
+
++------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+
+|emp_no|emp_title_id|birth_date|first_name|  last_name|sex| hire_date|no_of_projects|Last_performance_rating|left_| last_date|
++------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+
+| 10001|       e0003|  9/2/1953|    Georgi|    Facello|  M| 6/26/1986|             9|                      C| true|7/30/1994|
+| 10002|       s0001|  6/2/1964|   Bezalel|     Simmel|  F|11/21/1985|             8|                      B|false|         |
+| 10003|       e0003| 12/3/1959|     Parto|    Bamford|  M| 8/28/1986|             1|                      C|false|         |
+| 10004|       e0003|  5/1/1954| Chirstian|    Koblick|  M| 12/1/1986|             5|                      A|false|         |
+| 10005|       s0001| 1/21/1955|   Kyoichi|   Maliniak|  M| 9/12/1989|             6|                      A|false|         |
+| 10006|       e0003| 4/20/1953|    Anneke|    Preusig|  F|  6/2/1989|            10|                      B|false|         |
+| 10007|       s0001| 5/23/1957|   Tzvetan|  Zielinski|  F| 2/10/1989|             6|                      B| true|9/18/2002|
+| 10008|       e0001| 2/19/1958|    Saniya|   Kalloufi|  M| 9/15/1994|             9|                      C|false|         |
+| 10009|       e0003| 4/19/1952|    Sumant|       Peac|  F| 2/18/1985|             8|                      B|false|         |
+| 10010|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|false|         |
+| 10011|       s0001| 11/7/1953|      Mary|      Sluis|  F| 1/22/1990|             6|                      C|false|         |
+| 10012|       e0003| 10/4/1960|  Patricio|  Bridgland|  M|12/18/1992|             3|                      A|false|         |
+| 10013|       s0002|  6/7/1963| Eberhardt|     Terkki|  M|10/20/1985|             6|                      C|false|         |
+| 10014|       e0002| 2/12/1956|     Berni|      Genin|  M| 3/11/1987|             9|                      B|false|         |
+| 10015|       s0002| 8/19/1959|  Guoxiang|  Nooteboom|  M|  7/2/1987|             4|                      B|false|         |
+| 10016|       s0001|  5/2/1961|  Kazuhito|Cappelletti|  M| 1/27/1995|             5|                      C|false|         |
+| 10017|       s0001|  7/6/1958| Cristinel|  Bouloucos|  F|  8/3/1993|            10|                      A|false|         |
+| 10018|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|false|         |
+| 10019|       s0001| 1/23/1953|   Lillian|    Haddadi|  M| 4/30/1999|             4|                      B|false|         |
+| 10020|       e0002|12/24/1952|    Mayuko|    Warwick|  M| 1/26/1991|             7|                      B|false|         |
++------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+
+only showing top 20 rows
+
++-------+------------------+
+|dept_no|         dept_name|
++-------+------------------+
+|   d001|         Marketing|
+|   d002|           Finance|
+|   d003|   Human Resources|
+|   d004|        Production|
+|   d005|       development|
+|   d006|Quality Management|
+|   d007|             Sales|
+|   d008|          Research|
+|   d009|  Customer Service|
++-------+------------------+
+
++------+-------+
+|emp_no|dept_no|
++------+-------+
+| 10001|   d005|
+| 10002|   d007|
+| 10003|   d004|
+| 10004|   d004|
+| 10005|   d003|
+| 10006|   d005|
+| 10007|   d008|
+| 10008|   d005|
+| 10009|   d006|
+| 10010|   d004|
+| 10010|   d006|
+| 10011|   d009|
+| 10012|   d005|
+| 10013|   d003|
+| 10014|   d005|
+| 10015|   d008|
+| 10016|   d007|
+| 10017|   d001|
+| 10018|   d004|
+| 10018|   d005|
++------+-------+
+only showing top 20 rows
+
++------+-------+
+|emp_no|dept_no|
++------+-------+
+| 10001|   d005|
+| 10002|   d007|
+| 10003|   d004|
+| 10004|   d004|
+| 10005|   d003|
+| 10006|   d005|
+| 10007|   d008|
+| 10008|   d005|
+| 10009|   d006|
+| 10010|   d004|
+| 10010|   d006|
+| 10011|   d009|
+| 10012|   d005|
+| 10013|   d003|
+| 10014|   d005|
+| 10015|   d008|
+| 10016|   d007|
+| 10017|   d001|
+| 10018|   d004|
+| 10018|   d005|
++------+-------+
+only showing top 20 rows
+
++--------+------------------+
+|title_id|             title|
++--------+------------------+
+|   e0001|Assistant Engineer|
+|   e0002|          Engineer|
+|   e0003|   Senior Engineer|
+|   e0004|  Technique Leader|
+|   m0001|           Manager|
+|   s0001|             Staff|
+|   s0002|      Senior Staff|
++--------+------------------+
+
++------+------+
+|emp_no|salary|
++------+------+
+| 10001| 60117|
+| 10002| 65828|
+| 10003| 40006|
+| 10004| 40054|
+| 10005| 78228|
+| 10006| 40000|
+| 10007| 56724|
+| 10008| 46671|
+| 10009| 60929|
+| 10010| 72488|
+| 10011| 42365|
+| 10012| 40000|
+| 10013| 40000|
+| 10014| 46168|
+| 10015| 40000|
+| 10016| 70889|
+| 10017| 71380|
+| 10018| 55881|
+| 10019| 44276|
+| 10020| 40000|
++------+------+
+only showing top 20 rows
+
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+
+|emp_no|dept_no|emp_title_id|birth_date|first_name|  last_name|sex| hire_date|no_of_projects|Last_performance_rating|left_| last_date|         dept_name|salary|title_id|             title|
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+
+| 10001|   d005|       e0003|  9/2/1953|    Georgi|    Facello|  M| 6/26/1986|             9|                      C| true|7/30/1994|       development| 60117|   e0003|   Senior Engineer|
+| 10002|   d007|       s0001|  6/2/1964|   Bezalel|     Simmel|  F|11/21/1985|             8|                      B|false|         |             Sales| 65828|   s0001|             Staff|
+| 10003|   d004|       e0003| 12/3/1959|     Parto|    Bamford|  M| 8/28/1986|             1|                      C|false|         |        Production| 40006|   e0003|   Senior Engineer|
+| 10004|   d004|       e0003|  5/1/1954| Chirstian|    Koblick|  M| 12/1/1986|             5|                      A|false|         |        Production| 40054|   e0003|   Senior Engineer|
+| 10005|   d003|       s0001| 1/21/1955|   Kyoichi|   Maliniak|  M| 9/12/1989|             6|                      A|false|         |   Human Resources| 78228|   s0001|             Staff|
+| 10006|   d005|       e0003| 4/20/1953|    Anneke|    Preusig|  F|  6/2/1989|            10|                      B|false|         |       development| 40000|   e0003|   Senior Engineer|
+| 10007|   d008|       s0001| 5/23/1957|   Tzvetan|  Zielinski|  F| 2/10/1989|             6|                      B| true|9/18/2002|          Research| 56724|   s0001|             Staff|
+| 10008|   d005|       e0001| 2/19/1958|    Saniya|   Kalloufi|  M| 9/15/1994|             9|                      C|false|         |       development| 46671|   e0001|Assistant Engineer|
+| 10009|   d006|       e0003| 4/19/1952|    Sumant|       Peac|  F| 2/18/1985|             8|                      B|false|         |Quality Management| 60929|   e0003|   Senior Engineer|
+| 10010|   d006|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|false|         |Quality Management| 72488|   e0002|          Engineer|
+| 10010|   d004|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|false|         |        Production| 72488|   e0002|          Engineer|
+| 10011|   d009|       s0001| 11/7/1953|      Mary|      Sluis|  F| 1/22/1990|             6|                      C|false|         |  Customer Service| 42365|   s0001|             Staff|
+| 10012|   d005|       e0003| 10/4/1960|  Patricio|  Bridgland|  M|12/18/1992|             3|                      A|false|         |       development| 40000|   e0003|   Senior Engineer|
+| 10013|   d003|       s0002|  6/7/1963| Eberhardt|     Terkki|  M|10/20/1985|             6|                      C|false|         |   Human Resources| 40000|   s0002|      Senior Staff|
+| 10014|   d005|       e0002| 2/12/1956|     Berni|      Genin|  M| 3/11/1987|             9|                      B|false|         |       development| 46168|   e0002|          Engineer|
+| 10015|   d008|       s0002| 8/19/1959|  Guoxiang|  Nooteboom|  M|  7/2/1987|             4|                      B|false|         |          Research| 40000|   s0002|      Senior Staff|
+| 10016|   d007|       s0001|  5/2/1961|  Kazuhito|Cappelletti|  M| 1/27/1995|             5|                      C|false|         |             Sales| 70889|   s0001|             Staff|
+| 10017|   d001|       s0001|  7/6/1958| Cristinel|  Bouloucos|  F|  8/3/1993|            10|                      A|false|         |         Marketing| 71380|   s0001|             Staff|
+| 10018|   d005|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|false|         |       development| 55881|   e0003|   Senior Engineer|
+| 10018|   d004|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|false|         |        Production| 55881|   e0003|   Senior Engineer|
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+
+only showing top 20 rows
+
+th DIM of DF :  (331603, 16)
++-------+------------------+-------+------------+----------+----------+---------+------+---------+------------------+-----------------------+---------+----------------+------------------+--------+------------------+
+|summary|            emp_no|dept_no|emp_title_id|birth_date|first_name|last_name|   sex|hire_date|    no_of_projects|Last_performance_rating|last_date|       dept_name|            salary|title_id|             title|
++-------+------------------+-------+------------+----------+----------+---------+------+---------+------------------+-----------------------+---------+----------------+------------------+--------+------------------+
+|  count|            331603| 331603|      331603|    331603|    331603|   331603|331603|   331603|            331603|                 331603|   331603|          331603|            331603|  331603|            331603|
+|   mean|253332.60502468314|   null|        null|      null|      null|     null|  null|     null|5.5048567111877755|                   null|     null|            null| 52972.22543221865|    null|              null|
+| stddev|161831.91944548965|   null|        null|      null|      null|     null|  null|     null|2.8728285038833064|                   null|     null|            null|14299.003000805887|    null|              null|
+|    min|             10001|   d001|       e0001|  1/1/1953|     Aamer|   Aamodt|     F| 1/1/1985|                 1|                      A|        |Customer Service|             40000|   e0001|Assistant Engineer|
+|    max|            499999|   d009|       s0002|  9/9/1964|    Zvonko|  dAstous|     M| 9/9/1999|                10|                      S|9/9/2008|     development|            129492|   s0002|  Technique Leader|
++-------+------------------+-------+------------+----------+----------+---------+------+---------+------------------+-----------------------+---------+----------------+------------------+--------+------------------+
+
++------+-------+------------+----------+----------+---------+---+---------+--------------+-----------------------+-----+---------+---------+------+--------+-----+
+|emp_no|dept_no|emp_title_id|birth_date|first_name|last_name|sex|hire_date|no_of_projects|Last_performance_rating|left_|last_date|dept_name|salary|title_id|title|
++------+-------+------------+----------+----------+---------+---+---------+--------------+-----------------------+-----+---------+---------+------+--------+-----+
+|     0|      0|           0|         0|         0|        0|  0|        0|             0|                      0|    0|        0|        0|     0|       0|    0|
++------+-------+------------+----------+----------+---------+---+---------+--------------+-----------------------+-----+---------+---------+------+--------+-----+
+
+number of dept :  9
+root
+ |-- emp_no: integer (nullable = true)
+ |-- dept_no: string (nullable = true)
+ |-- emp_title_id: string (nullable = true)
+ |-- birth_date: string (nullable = true)
+ |-- first_name: string (nullable = true)
+ |-- last_name: string (nullable = true)
+ |-- sex: string (nullable = true)
+ |-- hire_date: string (nullable = true)
+ |-- no_of_projects: integer (nullable = true)
+ |-- Last_performance_rating: string (nullable = true)
+ |-- left_: boolean (nullable = true)
+ |-- last_date: string (nullable = true)
+ |-- dept_name: string (nullable = true)
+ |-- salary: integer (nullable = true)
+ |-- title_id: string (nullable = true)
+ |-- title: string (nullable = true)
+
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+
+|emp_no|dept_no|emp_title_id|birth_date|first_name|  last_name|sex| hire_date|no_of_projects|Last_performance_rating|left_| last_date|         dept_name|salary|title_id|             title|
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+
+| 10001|   d005|       e0003|  9/2/1953|    Georgi|    Facello|  M| 6/26/1986|             9|                      C| true|7/30/1994|       development| 60117|   e0003|   Senior Engineer|
+| 10002|   d007|       s0001|  6/2/1964|   Bezalel|     Simmel|  F|11/21/1985|             8|                      B|false|         |             Sales| 65828|   s0001|             Staff|
+| 10003|   d004|       e0003| 12/3/1959|     Parto|    Bamford|  M| 8/28/1986|             1|                      C|false|         |        Production| 40006|   e0003|   Senior Engineer|
+| 10004|   d004|       e0003|  5/1/1954| Chirstian|    Koblick|  M| 12/1/1986|             5|                      A|false|         |        Production| 40054|   e0003|   Senior Engineer|
+| 10005|   d003|       s0001| 1/21/1955|   Kyoichi|   Maliniak|  M| 9/12/1989|             6|                      A|false|         |   Human Resources| 78228|   s0001|             Staff|
+| 10006|   d005|       e0003| 4/20/1953|    Anneke|    Preusig|  F|  6/2/1989|            10|                      B|false|         |       development| 40000|   e0003|   Senior Engineer|
+| 10007|   d008|       s0001| 5/23/1957|   Tzvetan|  Zielinski|  F| 2/10/1989|             6|                      B| true|9/18/2002|          Research| 56724|   s0001|             Staff|
+| 10008|   d005|       e0001| 2/19/1958|    Saniya|   Kalloufi|  M| 9/15/1994|             9|                      C|false|         |       development| 46671|   e0001|Assistant Engineer|
+| 10009|   d006|       e0003| 4/19/1952|    Sumant|       Peac|  F| 2/18/1985|             8|                      B|false|         |Quality Management| 60929|   e0003|   Senior Engineer|
+| 10010|   d006|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|false|         |Quality Management| 72488|   e0002|          Engineer|
+| 10010|   d004|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|false|         |        Production| 72488|   e0002|          Engineer|
+| 10011|   d009|       s0001| 11/7/1953|      Mary|      Sluis|  F| 1/22/1990|             6|                      C|false|         |  Customer Service| 42365|   s0001|             Staff|
+| 10012|   d005|       e0003| 10/4/1960|  Patricio|  Bridgland|  M|12/18/1992|             3|                      A|false|         |       development| 40000|   e0003|   Senior Engineer|
+| 10013|   d003|       s0002|  6/7/1963| Eberhardt|     Terkki|  M|10/20/1985|             6|                      C|false|         |   Human Resources| 40000|   s0002|      Senior Staff|
+| 10014|   d005|       e0002| 2/12/1956|     Berni|      Genin|  M| 3/11/1987|             9|                      B|false|         |       development| 46168|   e0002|          Engineer|
+| 10015|   d008|       s0002| 8/19/1959|  Guoxiang|  Nooteboom|  M|  7/2/1987|             4|                      B|false|         |          Research| 40000|   s0002|      Senior Staff|
+| 10016|   d007|       s0001|  5/2/1961|  Kazuhito|Cappelletti|  M| 1/27/1995|             5|                      C|false|         |             Sales| 70889|   s0001|             Staff|
+| 10017|   d001|       s0001|  7/6/1958| Cristinel|  Bouloucos|  F|  8/3/1993|            10|                      A|false|         |         Marketing| 71380|   s0001|             Staff|
+| 10018|   d005|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|false|         |       development| 55881|   e0003|   Senior Engineer|
+| 10018|   d004|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|false|         |        Production| 55881|   e0003|   Senior Engineer|
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+
+only showing top 20 rows
+
+DIM of True DF :  (33021, 16)
+DIM of False DF :  (298582, 16)
++------+-------+------------+----------+-----------+----------+---+----------+--------------+-----------------------+-----+-----------+----------------+------+--------+------------------+
+|emp_no|dept_no|emp_title_id|birth_date| first_name| last_name|sex| hire_date|no_of_projects|Last_performance_rating|left_|  last_date|       dept_name|salary|title_id|             title|
++------+-------+------------+----------+-----------+----------+---+----------+--------------+-----------------------+-----+-----------+----------------+------+--------+------------------+
+| 15534|   d002|       s0001| 2/23/1954|   Guozhong|   Grabner|  F|  5/6/1987|             3|                      A| true| 12/1/1996|         Finance| 63090|   s0001|             Staff|
+| 19214|   d002|       s0001| 3/29/1956|   Patricia|     Gulla|  M| 2/11/1996|             3|                      C|false|          |         Finance| 60430|   s0001|             Staff|
+| 89578|   d007|       s0001|  3/2/1962|      Subbu|    Chinin|  M| 7/30/1998|             9|                      A| true|12/13/2004|           Sales| 91983|   s0001|             Staff|
+|212254|   d007|       s0001| 1/10/1957|      Heeju|    Matzke|  M|10/17/1990|             5|                      A| true| 7/18/2001|           Sales| 74162|   s0001|             Staff|
+|400299|   d007|       s0001|  7/1/1953|     Anneke| Haraldson|  F|11/14/1987|             5|                      S| true| 5/24/1996|           Sales| 61172|   s0001|             Staff|
+| 27177|   d004|       e0003|  8/8/1953|     Shahaf|   Vickson|  M|10/29/1989|             4|                      A|false|          |      Production| 40000|   e0003|   Senior Engineer|
+| 76943|   d004|       e0002|  3/5/1955|     Sanjoy|Poulakidas|  M| 7/17/1988|             6|                      S| true|10/16/1999|      Production| 40000|   e0002|          Engineer|
+|451731|   d004|       e0003|  3/4/1964|      Alair|  Standera|  M| 2/20/1992|             1|                      A|false|          |      Production| 40000|   e0003|   Senior Engineer|
+|270446|   d007|       s0001| 12/6/1964|Christfried|    Krybus|  F| 3/10/1988|             1|                      B|false|          |           Sales| 74378|   s0001|             Staff|
+|283504|   d007|       s0001| 3/25/1953|      Koldo|     Jeong|  M| 7/13/1987|             5|                      B|false|          |           Sales| 40000|   s0001|             Staff|
+|456779|   d005|       e0003|10/18/1957|    Juyoung|    Cronin|  M| 4/22/1989|             4|                      A|false|          |     development| 52457|   e0003|   Senior Engineer|
+|479605|   d001|       s0001|  6/8/1961|    Premsyl|Waeselynck|  M|  9/4/1989|             2|                      B|false|          |       Marketing| 88209|   s0001|             Staff|
+|431322|   d005|       e0003|10/24/1961|      Isamu|    Dalton|  M| 4/25/1993|            10|                      C| true| 3/18/1995|     development| 66231|   e0003|   Senior Engineer|
+| 70618|   d005|       e0003| 7/13/1961|      Emdad|Pouyioutas|  F| 3/22/1988|            10|                      A|false|          |     development| 40000|   e0003|   Senior Engineer|
+|472052|   d005|       e0001| 1/26/1965|   Godehard|    Chinal|  M|11/12/1994|             1|                      C| true|  9/4/2005|     development| 52516|   e0001|Assistant Engineer|
+| 85653|   d008|       s0001| 9/22/1952|      Tayeb|     Rosis|  M| 5/10/1992|             9|                      B|false|          |        Research| 40000|   s0001|             Staff|
+|221985|   d005|       e0003| 5/11/1961|     Boalin|  Thorelli|  F|12/12/1985|            10|                      A|false|          |     development| 55851|   e0003|   Senior Engineer|
+|463086|   d004|       e0003| 1/28/1958|    Radhika| Barbanera|  F|  2/8/1985|             5|                      C| true| 2/23/1987|      Production| 40000|   e0003|   Senior Engineer|
+|481509|   d009|       s0001| 10/2/1964|    Mitchel|  Highland|  M|  9/9/1988|             5|                      B| true| 1/17/2002|Customer Service| 40000|   s0001|             Staff|
+|202469|   d007|       s0001| 7/31/1963|     Siamak|    Schaad|  M| 6/21/1988|             9|                      A| true| 5/14/1992|           Sales| 77817|   s0001|             Staff|
++------+-------+------------+----------+-----------+----------+---+----------+--------------+-----------------------+-----+-----------+----------------+------+--------+------------------+
+only showing top 20 rows
+
+root
+ |-- emp_no: long (nullable = true)
+ |-- dept_no: string (nullable = true)
+ |-- emp_title_id: string (nullable = true)
+ |-- birth_date: string (nullable = true)
+ |-- first_name: string (nullable = true)
+ |-- last_name: string (nullable = true)
+ |-- sex: string (nullable = true)
+ |-- hire_date: string (nullable = true)
+ |-- no_of_projects: long (nullable = true)
+ |-- Last_performance_rating: string (nullable = true)
+ |-- left_: boolean (nullable = true)
+ |-- last_date: string (nullable = true)
+ |-- dept_name: string (nullable = true)
+ |-- salary: long (nullable = true)
+ |-- title_id: string (nullable = true)
+ |-- title: string (nullable = true)
+
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+
+|emp_no|dept_no|emp_title_id|birth_date|first_name|  last_name|sex| hire_date|no_of_projects|Last_performance_rating|left_| last_date|         dept_name|salary|title_id|             title| age|
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+
+| 10001|   d005|       e0003|  9/2/1953|    Georgi|    Facello|  M| 6/26/1986|             9|                      C|    1|7/30/1994|       development| 60117|   e0003|   Senior Engineer|1953|
+| 10002|   d007|       s0001|  6/2/1964|   Bezalel|     Simmel|  F|11/21/1985|             8|                      B|    0|         |             Sales| 65828|   s0001|             Staff|1964|
+| 10003|   d004|       e0003| 12/3/1959|     Parto|    Bamford|  M| 8/28/1986|             1|                      C|    0|         |        Production| 40006|   e0003|   Senior Engineer|1959|
+| 10004|   d004|       e0003|  5/1/1954| Chirstian|    Koblick|  M| 12/1/1986|             5|                      A|    0|         |        Production| 40054|   e0003|   Senior Engineer|1954|
+| 10005|   d003|       s0001| 1/21/1955|   Kyoichi|   Maliniak|  M| 9/12/1989|             6|                      A|    0|         |   Human Resources| 78228|   s0001|             Staff|1955|
+| 10006|   d005|       e0003| 4/20/1953|    Anneke|    Preusig|  F|  6/2/1989|            10|                      B|    0|         |       development| 40000|   e0003|   Senior Engineer|1953|
+| 10007|   d008|       s0001| 5/23/1957|   Tzvetan|  Zielinski|  F| 2/10/1989|             6|                      B|    1|9/18/2002|          Research| 56724|   s0001|             Staff|1957|
+| 10008|   d005|       e0001| 2/19/1958|    Saniya|   Kalloufi|  M| 9/15/1994|             9|                      C|    0|         |       development| 46671|   e0001|Assistant Engineer|1958|
+| 10009|   d006|       e0003| 4/19/1952|    Sumant|       Peac|  F| 2/18/1985|             8|                      B|    0|         |Quality Management| 60929|   e0003|   Senior Engineer|1952|
+| 10010|   d006|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|    0|         |Quality Management| 72488|   e0002|          Engineer|1963|
+| 10010|   d004|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|    0|         |        Production| 72488|   e0002|          Engineer|1963|
+| 10011|   d009|       s0001| 11/7/1953|      Mary|      Sluis|  F| 1/22/1990|             6|                      C|    0|         |  Customer Service| 42365|   s0001|             Staff|1953|
+| 10012|   d005|       e0003| 10/4/1960|  Patricio|  Bridgland|  M|12/18/1992|             3|                      A|    0|         |       development| 40000|   e0003|   Senior Engineer|1960|
+| 10013|   d003|       s0002|  6/7/1963| Eberhardt|     Terkki|  M|10/20/1985|             6|                      C|    0|         |   Human Resources| 40000|   s0002|      Senior Staff|1963|
+| 10014|   d005|       e0002| 2/12/1956|     Berni|      Genin|  M| 3/11/1987|             9|                      B|    0|         |       development| 46168|   e0002|          Engineer|1956|
+| 10015|   d008|       s0002| 8/19/1959|  Guoxiang|  Nooteboom|  M|  7/2/1987|             4|                      B|    0|         |          Research| 40000|   s0002|      Senior Staff|1959|
+| 10016|   d007|       s0001|  5/2/1961|  Kazuhito|Cappelletti|  M| 1/27/1995|             5|                      C|    0|         |             Sales| 70889|   s0001|             Staff|1961|
+| 10017|   d001|       s0001|  7/6/1958| Cristinel|  Bouloucos|  F|  8/3/1993|            10|                      A|    0|         |         Marketing| 71380|   s0001|             Staff|1958|
+| 10018|   d005|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|    0|         |       development| 55881|   e0003|   Senior Engineer|1954|
+| 10018|   d004|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|    0|         |        Production| 55881|   e0003|   Senior Engineer|1954|
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+
+only showing top 20 rows
+
++---------------+-----------------+-------+---------------+---------------+-------------+-----------------------+-----------+
+|      dept_name|dept_name_Indexed|dept_no|dept_no_Indexed|          title|title_Indexed|Last_performance_rating|lpr_Indexed|
++---------------+-----------------+-------+---------------+---------------+-------------+-----------------------+-----------+
+|    development|              0.0|   d005|            0.0|Senior Engineer|          1.0|                      C|        2.0|
+|          Sales|              2.0|   d007|            2.0|          Staff|          0.0|                      B|        0.0|
+|     Production|              1.0|   d004|            1.0|Senior Engineer|          1.0|                      C|        2.0|
+|     Production|              1.0|   d004|            1.0|Senior Engineer|          1.0|                      A|        1.0|
+|Human Resources|              7.0|   d003|            7.0|          Staff|          0.0|                      A|        1.0|
++---------------+-----------------+-------+---------------+---------------+-------------+-----------------------+-----------+
+only showing top 5 rows
+
++------------------+-----------------+--------------+-------+---------------+-------------+------------------+-------------+-------------+
+|         dept_name|dept_name_Indexed|dept_name_vect|dept_no|dept_no_Indexed| dept_no_vect|             title|title_Indexed|   title_vect|
++------------------+-----------------+--------------+-------+---------------+-------------+------------------+-------------+-------------+
+|       development|              0.0| (8,[0],[1.0])|   d005|            0.0|(8,[0],[1.0])|   Senior Engineer|          1.0|(6,[1],[1.0])|
+|             Sales|              2.0| (8,[2],[1.0])|   d007|            2.0|(8,[2],[1.0])|             Staff|          0.0|(6,[0],[1.0])|
+|        Production|              1.0| (8,[1],[1.0])|   d004|            1.0|(8,[1],[1.0])|   Senior Engineer|          1.0|(6,[1],[1.0])|
+|        Production|              1.0| (8,[1],[1.0])|   d004|            1.0|(8,[1],[1.0])|   Senior Engineer|          1.0|(6,[1],[1.0])|
+|   Human Resources|              7.0| (8,[7],[1.0])|   d003|            7.0|(8,[7],[1.0])|             Staff|          0.0|(6,[0],[1.0])|
+|       development|              0.0| (8,[0],[1.0])|   d005|            0.0|(8,[0],[1.0])|   Senior Engineer|          1.0|(6,[1],[1.0])|
+|          Research|              4.0| (8,[4],[1.0])|   d008|            4.0|(8,[4],[1.0])|             Staff|          0.0|(6,[0],[1.0])|
+|       development|              0.0| (8,[0],[1.0])|   d005|            0.0|(8,[0],[1.0])|Assistant Engineer|          5.0|(6,[5],[1.0])|
+|Quality Management|              6.0| (8,[6],[1.0])|   d006|            6.0|(8,[6],[1.0])|   Senior Engineer|          1.0|(6,[1],[1.0])|
+|Quality Management|              6.0| (8,[6],[1.0])|   d006|            6.0|(8,[6],[1.0])|          Engineer|          2.0|(6,[2],[1.0])|
++------------------+-----------------+--------------+-------+---------------+-------------+------------------+-------------+-------------+
+only showing top 10 rows
+
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+-----------------+---------------+-------------+-----------+--------------+-------------+-------------+-------------+
+|emp_no|dept_no|emp_title_id|birth_date|first_name|  last_name|sex| hire_date|no_of_projects|Last_performance_rating|left_| last_date|         dept_name|salary|title_id|             title| age|dept_name_Indexed|dept_no_Indexed|title_Indexed|lpr_Indexed|dept_name_vect| dept_no_vect|   title_vect|     lpr_vect|
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+-----------------+---------------+-------------+-----------+--------------+-------------+-------------+-------------+
+| 10001|   d005|       e0003|  9/2/1953|    Georgi|    Facello|  M| 6/26/1986|             9|                      C|    1|7/30/1994|       development| 60117|   e0003|   Senior Engineer|1953|              0.0|            0.0|          1.0|        2.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[1],[1.0])|(4,[2],[1.0])|
+| 10002|   d007|       s0001|  6/2/1964|   Bezalel|     Simmel|  F|11/21/1985|             8|                      B|    0|         |             Sales| 65828|   s0001|             Staff|1964|              2.0|            2.0|          0.0|        0.0| (8,[2],[1.0])|(8,[2],[1.0])|(6,[0],[1.0])|(4,[0],[1.0])|
+| 10003|   d004|       e0003| 12/3/1959|     Parto|    Bamford|  M| 8/28/1986|             1|                      C|    0|         |        Production| 40006|   e0003|   Senior Engineer|1959|              1.0|            1.0|          1.0|        2.0| (8,[1],[1.0])|(8,[1],[1.0])|(6,[1],[1.0])|(4,[2],[1.0])|
+| 10004|   d004|       e0003|  5/1/1954| Chirstian|    Koblick|  M| 12/1/1986|             5|                      A|    0|         |        Production| 40054|   e0003|   Senior Engineer|1954|              1.0|            1.0|          1.0|        1.0| (8,[1],[1.0])|(8,[1],[1.0])|(6,[1],[1.0])|(4,[1],[1.0])|
+| 10005|   d003|       s0001| 1/21/1955|   Kyoichi|   Maliniak|  M| 9/12/1989|             6|                      A|    0|         |   Human Resources| 78228|   s0001|             Staff|1955|              7.0|            7.0|          0.0|        1.0| (8,[7],[1.0])|(8,[7],[1.0])|(6,[0],[1.0])|(4,[1],[1.0])|
+| 10006|   d005|       e0003| 4/20/1953|    Anneke|    Preusig|  F|  6/2/1989|            10|                      B|    0|         |       development| 40000|   e0003|   Senior Engineer|1953|              0.0|            0.0|          1.0|        0.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[1],[1.0])|(4,[0],[1.0])|
+| 10007|   d008|       s0001| 5/23/1957|   Tzvetan|  Zielinski|  F| 2/10/1989|             6|                      B|    1|9/18/2002|          Research| 56724|   s0001|             Staff|1957|              4.0|            4.0|          0.0|        0.0| (8,[4],[1.0])|(8,[4],[1.0])|(6,[0],[1.0])|(4,[0],[1.0])|
+| 10008|   d005|       e0001| 2/19/1958|    Saniya|   Kalloufi|  M| 9/15/1994|             9|                      C|    0|         |       development| 46671|   e0001|Assistant Engineer|1958|              0.0|            0.0|          5.0|        2.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[5],[1.0])|(4,[2],[1.0])|
+| 10009|   d006|       e0003| 4/19/1952|    Sumant|       Peac|  F| 2/18/1985|             8|                      B|    0|         |Quality Management| 60929|   e0003|   Senior Engineer|1952|              6.0|            6.0|          1.0|        0.0| (8,[6],[1.0])|(8,[6],[1.0])|(6,[1],[1.0])|(4,[0],[1.0])|
+| 10010|   d006|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|    0|         |Quality Management| 72488|   e0002|          Engineer|1963|              6.0|            6.0|          2.0|        1.0| (8,[6],[1.0])|(8,[6],[1.0])|(6,[2],[1.0])|(4,[1],[1.0])|
+| 10010|   d004|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|    0|         |        Production| 72488|   e0002|          Engineer|1963|              1.0|            1.0|          2.0|        1.0| (8,[1],[1.0])|(8,[1],[1.0])|(6,[2],[1.0])|(4,[1],[1.0])|
+| 10011|   d009|       s0001| 11/7/1953|      Mary|      Sluis|  F| 1/22/1990|             6|                      C|    0|         |  Customer Service| 42365|   s0001|             Staff|1953|              3.0|            3.0|          0.0|        2.0| (8,[3],[1.0])|(8,[3],[1.0])|(6,[0],[1.0])|(4,[2],[1.0])|
+| 10012|   d005|       e0003| 10/4/1960|  Patricio|  Bridgland|  M|12/18/1992|             3|                      A|    0|         |       development| 40000|   e0003|   Senior Engineer|1960|              0.0|            0.0|          1.0|        1.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[1],[1.0])|(4,[1],[1.0])|
+| 10013|   d003|       s0002|  6/7/1963| Eberhardt|     Terkki|  M|10/20/1985|             6|                      C|    0|         |   Human Resources| 40000|   s0002|      Senior Staff|1963|              7.0|            7.0|          3.0|        2.0| (8,[7],[1.0])|(8,[7],[1.0])|(6,[3],[1.0])|(4,[2],[1.0])|
+| 10014|   d005|       e0002| 2/12/1956|     Berni|      Genin|  M| 3/11/1987|             9|                      B|    0|         |       development| 46168|   e0002|          Engineer|1956|              0.0|            0.0|          2.0|        0.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[2],[1.0])|(4,[0],[1.0])|
+| 10015|   d008|       s0002| 8/19/1959|  Guoxiang|  Nooteboom|  M|  7/2/1987|             4|                      B|    0|         |          Research| 40000|   s0002|      Senior Staff|1959|              4.0|            4.0|          3.0|        0.0| (8,[4],[1.0])|(8,[4],[1.0])|(6,[3],[1.0])|(4,[0],[1.0])|
+| 10016|   d007|       s0001|  5/2/1961|  Kazuhito|Cappelletti|  M| 1/27/1995|             5|                      C|    0|         |             Sales| 70889|   s0001|             Staff|1961|              2.0|            2.0|          0.0|        2.0| (8,[2],[1.0])|(8,[2],[1.0])|(6,[0],[1.0])|(4,[2],[1.0])|
+| 10017|   d001|       s0001|  7/6/1958| Cristinel|  Bouloucos|  F|  8/3/1993|            10|                      A|    0|         |         Marketing| 71380|   s0001|             Staff|1958|              5.0|            5.0|          0.0|        1.0| (8,[5],[1.0])|(8,[5],[1.0])|(6,[0],[1.0])|(4,[1],[1.0])|
+| 10018|   d005|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|    0|         |       development| 55881|   e0003|   Senior Engineer|1954|              0.0|            0.0|          1.0|        0.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[1],[1.0])|(4,[0],[1.0])|
+| 10018|   d004|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|    0|         |        Production| 55881|   e0003|   Senior Engineer|1954|              1.0|            1.0|          1.0|        0.0| (8,[1],[1.0])|(8,[1],[1.0])|(6,[1],[1.0])|(4,[0],[1.0])|
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+-----------------+---------------+-------------+-----------+--------------+-------------+-------------+-------------+
+only showing top 20 rows
+
++--------------------+
+|            features|
++--------------------+
+|(29,[0,1,2,3,11,2...|
+|(29,[0,1,2,5,13,1...|
+|(29,[0,1,2,4,12,2...|
+|(29,[0,1,2,4,12,2...|
+|(29,[0,1,2,10,18,...|
++--------------------+
+only showing top 5 rows
+
+root
+ |-- emp_no: long (nullable = true)
+ |-- dept_no: string (nullable = true)
+ |-- emp_title_id: string (nullable = true)
+ |-- birth_date: string (nullable = true)
+ |-- first_name: string (nullable = true)
+ |-- last_name: string (nullable = true)
+ |-- sex: string (nullable = true)
+ |-- hire_date: string (nullable = true)
+ |-- no_of_projects: long (nullable = true)
+ |-- Last_performance_rating: string (nullable = true)
+ |-- left_: long (nullable = true)
+ |-- last_date: string (nullable = true)
+ |-- dept_name: string (nullable = true)
+ |-- salary: long (nullable = true)
+ |-- title_id: string (nullable = true)
+ |-- title: string (nullable = true)
+ |-- age: long (nullable = true)
+ |-- dept_name_Indexed: double (nullable = false)
+ |-- dept_no_Indexed: double (nullable = false)
+ |-- title_Indexed: double (nullable = false)
+ |-- lpr_Indexed: double (nullable = false)
+ |-- dept_name_vect: vector (nullable = true)
+ |-- dept_no_vect: vector (nullable = true)
+ |-- title_vect: vector (nullable = true)
+ |-- lpr_vect: vector (nullable = true)
+ |-- features: vector (nullable = true)
+
+DIM OF Train DF :  (265568, 26)
+DIM OF Train DF :  (66035, 26)
+DF type :  <class 'pyspark.sql.dataframe.DataFrame'>
+DF type :  <class 'pyspark.sql.dataframe.DataFrame'>
++--------------------+-----+----------+
+|            features|left_|prediction|
++--------------------+-----+----------+
+|(29,[0,1,2,3,11,2...|    1|       0.0|
+|(29,[0,1,2,5,13,1...|    0|       0.0|
+|(29,[0,1,2,4,12,2...|    0|       0.0|
+|(29,[0,1,2,3,11,2...|    0|       0.0|
+|(29,[0,1,2,7,15,1...|    1|       0.0|
+|(29,[0,1,2,3,11,2...|    0|       0.0|
+|(29,[0,1,2,9,17,2...|    0|       0.0|
+|(29,[0,1,2,9,17,2...|    0|       0.0|
+|(29,[0,1,2,6,14,1...|    0|       0.0|
+|(29,[0,1,2,3,11,2...|    0|       0.0|
+|(29,[0,1,2,10,18,...|    0|       0.0|
+|(29,[0,1,2,7,15,2...|    0|       0.0|
+|(29,[0,1,2,3,11,2...|    0|       0.0|
+|(29,[0,1,2,7,15,1...|    0|       0.0|
+|(29,[0,1,2,4,12,2...|    0|       0.0|
+|(29,[0,1,2,3,11,2...|    0|       0.0|
+|(29,[0,1,2,3,11,2...|    1|       0.0|
+|(29,[0,1,2,3,11,2...|    0|       0.0|
+|(29,[0,1,2,4,12,2...|    0|       0.0|
+|(29,[0,1,2,3,11,2...|    0|       0.0|
++--------------------+-----+----------+
+only showing top 20 rows
+
++--------------------+-----+----------+
+|            features|left_|prediction|
++--------------------+-----+----------+
+|(29,[0,1,2,4,12,2...|    0|       0.0|
+|(29,[0,1,2,10,18,...|    0|       0.0|
+|(29,[0,1,2,4,12,2...|    0|       0.0|
+|(29,[0,1,2,3,11,2...|    0|       0.0|
+|(29,[0,1,2,5,13,1...|    0|       0.0|
+|(29,[0,1,2,8,16,1...|    0|       0.0|
+|(29,[0,1,2,4,12,2...|    0|       0.0|
+|(29,[0,1,2,4,12,2...|    0|       0.0|
+|(29,[0,1,2,3,11,2...|    0|       0.0|
+|(29,[0,1,2,9,17,2...|    0|       0.0|
+|(29,[0,1,2,4,12,2...|    0|       0.0|
+|(29,[0,1,2,7,15,1...|    0|       0.0|
+|(29,[0,1,2,19,27]...|    0|       0.0|
+|(29,[0,1,2,4,12,2...|    0|       0.0|
+|(29,[0,1,2,10,18,...|    0|       0.0|
+|(29,[0,1,2,5,13,2...|    0|       0.0|
+|(29,[0,1,2,3,11,2...|    0|       0.0|
+|(29,[0,1,2,3,11,2...|    0|       0.0|
+|(29,[0,1,2,4,12,2...|    0|       0.0|
+|(29,[0,1,2,3,11,2...|    0|       0.0|
++--------------------+-----+----------+
+only showing top 20 rows
+
+Tain Data Accuracy :  0.9003381431497771
+Test Data Accuracy :  0.9007496024835314
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+-----------------+---------------+-------------+-----------+--------------+-------------+-------------+-------------+--------------------+
+|emp_no|dept_no|emp_title_id|birth_date|first_name|  last_name|sex| hire_date|no_of_projects|Last_performance_rating|left_| last_date|         dept_name|salary|title_id|             title| age|dept_name_Indexed|dept_no_Indexed|title_Indexed|lpr_Indexed|dept_name_vect| dept_no_vect|   title_vect|     lpr_vect|            features|
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+-----------------+---------------+-------------+-----------+--------------+-------------+-------------+-------------+--------------------+
+| 10001|   d005|       e0003|  9/2/1953|    Georgi|    Facello|  M| 6/26/1986|             9|                      C|    1|7/30/1994|       development| 60117|   e0003|   Senior Engineer|1953|              0.0|            0.0|          1.0|        2.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[1],[1.0])|(4,[2],[1.0])|(29,[0,1,2,3,11,2...|
+| 10002|   d007|       s0001|  6/2/1964|   Bezalel|     Simmel|  F|11/21/1985|             8|                      B|    0|         |             Sales| 65828|   s0001|             Staff|1964|              2.0|            2.0|          0.0|        0.0| (8,[2],[1.0])|(8,[2],[1.0])|(6,[0],[1.0])|(4,[0],[1.0])|(29,[0,1,2,5,13,1...|
+| 10003|   d004|       e0003| 12/3/1959|     Parto|    Bamford|  M| 8/28/1986|             1|                      C|    0|         |        Production| 40006|   e0003|   Senior Engineer|1959|              1.0|            1.0|          1.0|        2.0| (8,[1],[1.0])|(8,[1],[1.0])|(6,[1],[1.0])|(4,[2],[1.0])|(29,[0,1,2,4,12,2...|
+| 10004|   d004|       e0003|  5/1/1954| Chirstian|    Koblick|  M| 12/1/1986|             5|                      A|    0|         |        Production| 40054|   e0003|   Senior Engineer|1954|              1.0|            1.0|          1.0|        1.0| (8,[1],[1.0])|(8,[1],[1.0])|(6,[1],[1.0])|(4,[1],[1.0])|(29,[0,1,2,4,12,2...|
+| 10005|   d003|       s0001| 1/21/1955|   Kyoichi|   Maliniak|  M| 9/12/1989|             6|                      A|    0|         |   Human Resources| 78228|   s0001|             Staff|1955|              7.0|            7.0|          0.0|        1.0| (8,[7],[1.0])|(8,[7],[1.0])|(6,[0],[1.0])|(4,[1],[1.0])|(29,[0,1,2,10,18,...|
+| 10006|   d005|       e0003| 4/20/1953|    Anneke|    Preusig|  F|  6/2/1989|            10|                      B|    0|         |       development| 40000|   e0003|   Senior Engineer|1953|              0.0|            0.0|          1.0|        0.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[1],[1.0])|(4,[0],[1.0])|(29,[0,1,2,3,11,2...|
+| 10007|   d008|       s0001| 5/23/1957|   Tzvetan|  Zielinski|  F| 2/10/1989|             6|                      B|    1|9/18/2002|          Research| 56724|   s0001|             Staff|1957|              4.0|            4.0|          0.0|        0.0| (8,[4],[1.0])|(8,[4],[1.0])|(6,[0],[1.0])|(4,[0],[1.0])|(29,[0,1,2,7,15,1...|
+| 10008|   d005|       e0001| 2/19/1958|    Saniya|   Kalloufi|  M| 9/15/1994|             9|                      C|    0|         |       development| 46671|   e0001|Assistant Engineer|1958|              0.0|            0.0|          5.0|        2.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[5],[1.0])|(4,[2],[1.0])|(29,[0,1,2,3,11,2...|
+| 10009|   d006|       e0003| 4/19/1952|    Sumant|       Peac|  F| 2/18/1985|             8|                      B|    0|         |Quality Management| 60929|   e0003|   Senior Engineer|1952|              6.0|            6.0|          1.0|        0.0| (8,[6],[1.0])|(8,[6],[1.0])|(6,[1],[1.0])|(4,[0],[1.0])|(29,[0,1,2,9,17,2...|
+| 10010|   d006|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|    0|         |Quality Management| 72488|   e0002|          Engineer|1963|              6.0|            6.0|          2.0|        1.0| (8,[6],[1.0])|(8,[6],[1.0])|(6,[2],[1.0])|(4,[1],[1.0])|(29,[0,1,2,9,17,2...|
+| 10010|   d004|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|    0|         |        Production| 72488|   e0002|          Engineer|1963|              1.0|            1.0|          2.0|        1.0| (8,[1],[1.0])|(8,[1],[1.0])|(6,[2],[1.0])|(4,[1],[1.0])|(29,[0,1,2,4,12,2...|
+| 10011|   d009|       s0001| 11/7/1953|      Mary|      Sluis|  F| 1/22/1990|             6|                      C|    0|         |  Customer Service| 42365|   s0001|             Staff|1953|              3.0|            3.0|          0.0|        2.0| (8,[3],[1.0])|(8,[3],[1.0])|(6,[0],[1.0])|(4,[2],[1.0])|(29,[0,1,2,6,14,1...|
+| 10012|   d005|       e0003| 10/4/1960|  Patricio|  Bridgland|  M|12/18/1992|             3|                      A|    0|         |       development| 40000|   e0003|   Senior Engineer|1960|              0.0|            0.0|          1.0|        1.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[1],[1.0])|(4,[1],[1.0])|(29,[0,1,2,3,11,2...|
+| 10013|   d003|       s0002|  6/7/1963| Eberhardt|     Terkki|  M|10/20/1985|             6|                      C|    0|         |   Human Resources| 40000|   s0002|      Senior Staff|1963|              7.0|            7.0|          3.0|        2.0| (8,[7],[1.0])|(8,[7],[1.0])|(6,[3],[1.0])|(4,[2],[1.0])|(29,[0,1,2,10,18,...|
+| 10014|   d005|       e0002| 2/12/1956|     Berni|      Genin|  M| 3/11/1987|             9|                      B|    0|         |       development| 46168|   e0002|          Engineer|1956|              0.0|            0.0|          2.0|        0.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[2],[1.0])|(4,[0],[1.0])|(29,[0,1,2,3,11,2...|
+| 10015|   d008|       s0002| 8/19/1959|  Guoxiang|  Nooteboom|  M|  7/2/1987|             4|                      B|    0|         |          Research| 40000|   s0002|      Senior Staff|1959|              4.0|            4.0|          3.0|        0.0| (8,[4],[1.0])|(8,[4],[1.0])|(6,[3],[1.0])|(4,[0],[1.0])|(29,[0,1,2,7,15,2...|
+| 10016|   d007|       s0001|  5/2/1961|  Kazuhito|Cappelletti|  M| 1/27/1995|             5|                      C|    0|         |             Sales| 70889|   s0001|             Staff|1961|              2.0|            2.0|          0.0|        2.0| (8,[2],[1.0])|(8,[2],[1.0])|(6,[0],[1.0])|(4,[2],[1.0])|(29,[0,1,2,5,13,1...|
+| 10017|   d001|       s0001|  7/6/1958| Cristinel|  Bouloucos|  F|  8/3/1993|            10|                      A|    0|         |         Marketing| 71380|   s0001|             Staff|1958|              5.0|            5.0|          0.0|        1.0| (8,[5],[1.0])|(8,[5],[1.0])|(6,[0],[1.0])|(4,[1],[1.0])|(29,[0,1,2,8,16,1...|
+| 10018|   d005|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|    0|         |       development| 55881|   e0003|   Senior Engineer|1954|              0.0|            0.0|          1.0|        0.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[1],[1.0])|(4,[0],[1.0])|(29,[0,1,2,3,11,2...|
+| 10018|   d004|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|    0|         |        Production| 55881|   e0003|   Senior Engineer|1954|              1.0|            1.0|          1.0|        0.0| (8,[1],[1.0])|(8,[1],[1.0])|(6,[1],[1.0])|(4,[0],[1.0])|(29,[0,1,2,4,12,2...|
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+-----------------+---------------+-------------+-----------+--------------+-------------+-------------+-------------+--------------------+
+only showing top 20 rows
+
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+-----------------+---------------+-------------+-----------+--------------+-------------+-------------+-------------+--------------------+
+|emp_no|dept_no|emp_title_id|birth_date|first_name|  last_name|sex| hire_date|no_of_projects|Last_performance_rating|left_| last_date|         dept_name|salary|title_id|             title| age|dept_name_Indexed|dept_no_Indexed|title_Indexed|lpr_Indexed|dept_name_vect| dept_no_vect|   title_vect|     lpr_vect|            features|
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+-----------------+---------------+-------------+-----------+--------------+-------------+-------------+-------------+--------------------+
+| 10001|   d005|       e0003|  9/2/1953|    Georgi|    Facello|  M| 6/26/1986|             9|                      C|    1|7/30/1994|       development| 60117|   e0003|   Senior Engineer|1953|              0.0|            0.0|          1.0|        2.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[1],[1.0])|(4,[2],[1.0])|(29,[0,1,2,3,11,2...|
+| 10002|   d007|       s0001|  6/2/1964|   Bezalel|     Simmel|  F|11/21/1985|             8|                      B|    0|         |             Sales| 65828|   s0001|             Staff|1964|              2.0|            2.0|          0.0|        0.0| (8,[2],[1.0])|(8,[2],[1.0])|(6,[0],[1.0])|(4,[0],[1.0])|(29,[0,1,2,5,13,1...|
+| 10003|   d004|       e0003| 12/3/1959|     Parto|    Bamford|  M| 8/28/1986|             1|                      C|    0|         |        Production| 40006|   e0003|   Senior Engineer|1959|              1.0|            1.0|          1.0|        2.0| (8,[1],[1.0])|(8,[1],[1.0])|(6,[1],[1.0])|(4,[2],[1.0])|(29,[0,1,2,4,12,2...|
+| 10004|   d004|       e0003|  5/1/1954| Chirstian|    Koblick|  M| 12/1/1986|             5|                      A|    0|         |        Production| 40054|   e0003|   Senior Engineer|1954|              1.0|            1.0|          1.0|        1.0| (8,[1],[1.0])|(8,[1],[1.0])|(6,[1],[1.0])|(4,[1],[1.0])|(29,[0,1,2,4,12,2...|
+| 10005|   d003|       s0001| 1/21/1955|   Kyoichi|   Maliniak|  M| 9/12/1989|             6|                      A|    0|         |   Human Resources| 78228|   s0001|             Staff|1955|              7.0|            7.0|          0.0|        1.0| (8,[7],[1.0])|(8,[7],[1.0])|(6,[0],[1.0])|(4,[1],[1.0])|(29,[0,1,2,10,18,...|
+| 10006|   d005|       e0003| 4/20/1953|    Anneke|    Preusig|  F|  6/2/1989|            10|                      B|    0|         |       development| 40000|   e0003|   Senior Engineer|1953|              0.0|            0.0|          1.0|        0.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[1],[1.0])|(4,[0],[1.0])|(29,[0,1,2,3,11,2...|
+| 10007|   d008|       s0001| 5/23/1957|   Tzvetan|  Zielinski|  F| 2/10/1989|             6|                      B|    1|9/18/2002|          Research| 56724|   s0001|             Staff|1957|              4.0|            4.0|          0.0|        0.0| (8,[4],[1.0])|(8,[4],[1.0])|(6,[0],[1.0])|(4,[0],[1.0])|(29,[0,1,2,7,15,1...|
+| 10008|   d005|       e0001| 2/19/1958|    Saniya|   Kalloufi|  M| 9/15/1994|             9|                      C|    0|         |       development| 46671|   e0001|Assistant Engineer|1958|              0.0|            0.0|          5.0|        2.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[5],[1.0])|(4,[2],[1.0])|(29,[0,1,2,3,11,2...|
+| 10009|   d006|       e0003| 4/19/1952|    Sumant|       Peac|  F| 2/18/1985|             8|                      B|    0|         |Quality Management| 60929|   e0003|   Senior Engineer|1952|              6.0|            6.0|          1.0|        0.0| (8,[6],[1.0])|(8,[6],[1.0])|(6,[1],[1.0])|(4,[0],[1.0])|(29,[0,1,2,9,17,2...|
+| 10010|   d006|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|    0|         |Quality Management| 72488|   e0002|          Engineer|1963|              6.0|            6.0|          2.0|        1.0| (8,[6],[1.0])|(8,[6],[1.0])|(6,[2],[1.0])|(4,[1],[1.0])|(29,[0,1,2,9,17,2...|
+| 10010|   d004|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|    0|         |        Production| 72488|   e0002|          Engineer|1963|              1.0|            1.0|          2.0|        1.0| (8,[1],[1.0])|(8,[1],[1.0])|(6,[2],[1.0])|(4,[1],[1.0])|(29,[0,1,2,4,12,2...|
+| 10011|   d009|       s0001| 11/7/1953|      Mary|      Sluis|  F| 1/22/1990|             6|                      C|    0|         |  Customer Service| 42365|   s0001|             Staff|1953|              3.0|            3.0|          0.0|        2.0| (8,[3],[1.0])|(8,[3],[1.0])|(6,[0],[1.0])|(4,[2],[1.0])|(29,[0,1,2,6,14,1...|
+| 10012|   d005|       e0003| 10/4/1960|  Patricio|  Bridgland|  M|12/18/1992|             3|                      A|    0|         |       development| 40000|   e0003|   Senior Engineer|1960|              0.0|            0.0|          1.0|        1.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[1],[1.0])|(4,[1],[1.0])|(29,[0,1,2,3,11,2...|
+| 10013|   d003|       s0002|  6/7/1963| Eberhardt|     Terkki|  M|10/20/1985|             6|                      C|    0|         |   Human Resources| 40000|   s0002|      Senior Staff|1963|              7.0|            7.0|          3.0|        2.0| (8,[7],[1.0])|(8,[7],[1.0])|(6,[3],[1.0])|(4,[2],[1.0])|(29,[0,1,2,10,18,...|
+| 10014|   d005|       e0002| 2/12/1956|     Berni|      Genin|  M| 3/11/1987|             9|                      B|    0|         |       development| 46168|   e0002|          Engineer|1956|              0.0|            0.0|          2.0|        0.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[2],[1.0])|(4,[0],[1.0])|(29,[0,1,2,3,11,2...|
+| 10015|   d008|       s0002| 8/19/1959|  Guoxiang|  Nooteboom|  M|  7/2/1987|             4|                      B|    0|         |          Research| 40000|   s0002|      Senior Staff|1959|              4.0|            4.0|          3.0|        0.0| (8,[4],[1.0])|(8,[4],[1.0])|(6,[3],[1.0])|(4,[0],[1.0])|(29,[0,1,2,7,15,2...|
+| 10016|   d007|       s0001|  5/2/1961|  Kazuhito|Cappelletti|  M| 1/27/1995|             5|                      C|    0|         |             Sales| 70889|   s0001|             Staff|1961|              2.0|            2.0|          0.0|        2.0| (8,[2],[1.0])|(8,[2],[1.0])|(6,[0],[1.0])|(4,[2],[1.0])|(29,[0,1,2,5,13,1...|
+| 10017|   d001|       s0001|  7/6/1958| Cristinel|  Bouloucos|  F|  8/3/1993|            10|                      A|    0|         |         Marketing| 71380|   s0001|             Staff|1958|              5.0|            5.0|          0.0|        1.0| (8,[5],[1.0])|(8,[5],[1.0])|(6,[0],[1.0])|(4,[1],[1.0])|(29,[0,1,2,8,16,1...|
+| 10018|   d005|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|    0|         |       development| 55881|   e0003|   Senior Engineer|1954|              0.0|            0.0|          1.0|        0.0| (8,[0],[1.0])|(8,[0],[1.0])|(6,[1],[1.0])|(4,[0],[1.0])|(29,[0,1,2,3,11,2...|
+| 10018|   d004|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|    0|         |        Production| 55881|   e0003|   Senior Engineer|1954|              1.0|            1.0|          1.0|        0.0| (8,[1],[1.0])|(8,[1],[1.0])|(6,[1],[1.0])|(4,[0],[1.0])|(29,[0,1,2,4,12,2...|
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+-----------------+---------------+-------------+-----------+--------------+-------------+-------------+-------------+--------------------+
+only showing top 20 rows
+
+Train Error = 0.101315
+Test Error = 0.0992504
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+
+|emp_no|dept_no|emp_title_id|birth_date|first_name|  last_name|sex| hire_date|no_of_projects|Last_performance_rating|left_| last_date|         dept_name|salary|title_id|             title| age|
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+
+| 10001|   d005|       e0003|  9/2/1953|    Georgi|    Facello|  M| 6/26/1986|             9|                      C|    1|7/30/1994|       development| 60117|   e0003|   Senior Engineer|1953|
+| 10002|   d007|       s0001|  6/2/1964|   Bezalel|     Simmel|  F|11/21/1985|             8|                      B|    0|         |             Sales| 65828|   s0001|             Staff|1964|
+| 10003|   d004|       e0003| 12/3/1959|     Parto|    Bamford|  M| 8/28/1986|             1|                      C|    0|         |        Production| 40006|   e0003|   Senior Engineer|1959|
+| 10004|   d004|       e0003|  5/1/1954| Chirstian|    Koblick|  M| 12/1/1986|             5|                      A|    0|         |        Production| 40054|   e0003|   Senior Engineer|1954|
+| 10005|   d003|       s0001| 1/21/1955|   Kyoichi|   Maliniak|  M| 9/12/1989|             6|                      A|    0|         |   Human Resources| 78228|   s0001|             Staff|1955|
+| 10006|   d005|       e0003| 4/20/1953|    Anneke|    Preusig|  F|  6/2/1989|            10|                      B|    0|         |       development| 40000|   e0003|   Senior Engineer|1953|
+| 10007|   d008|       s0001| 5/23/1957|   Tzvetan|  Zielinski|  F| 2/10/1989|             6|                      B|    1|9/18/2002|          Research| 56724|   s0001|             Staff|1957|
+| 10008|   d005|       e0001| 2/19/1958|    Saniya|   Kalloufi|  M| 9/15/1994|             9|                      C|    0|         |       development| 46671|   e0001|Assistant Engineer|1958|
+| 10009|   d006|       e0003| 4/19/1952|    Sumant|       Peac|  F| 2/18/1985|             8|                      B|    0|         |Quality Management| 60929|   e0003|   Senior Engineer|1952|
+| 10010|   d006|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|    0|         |Quality Management| 72488|   e0002|          Engineer|1963|
+| 10010|   d004|       e0002|  6/1/1963| Duangkaew|   Piveteau|  F| 8/24/1989|             4|                      A|    0|         |        Production| 72488|   e0002|          Engineer|1963|
+| 10011|   d009|       s0001| 11/7/1953|      Mary|      Sluis|  F| 1/22/1990|             6|                      C|    0|         |  Customer Service| 42365|   s0001|             Staff|1953|
+| 10012|   d005|       e0003| 10/4/1960|  Patricio|  Bridgland|  M|12/18/1992|             3|                      A|    0|         |       development| 40000|   e0003|   Senior Engineer|1960|
+| 10013|   d003|       s0002|  6/7/1963| Eberhardt|     Terkki|  M|10/20/1985|             6|                      C|    0|         |   Human Resources| 40000|   s0002|      Senior Staff|1963|
+| 10014|   d005|       e0002| 2/12/1956|     Berni|      Genin|  M| 3/11/1987|             9|                      B|    0|         |       development| 46168|   e0002|          Engineer|1956|
+| 10015|   d008|       s0002| 8/19/1959|  Guoxiang|  Nooteboom|  M|  7/2/1987|             4|                      B|    0|         |          Research| 40000|   s0002|      Senior Staff|1959|
+| 10016|   d007|       s0001|  5/2/1961|  Kazuhito|Cappelletti|  M| 1/27/1995|             5|                      C|    0|         |             Sales| 70889|   s0001|             Staff|1961|
+| 10017|   d001|       s0001|  7/6/1958| Cristinel|  Bouloucos|  F|  8/3/1993|            10|                      A|    0|         |         Marketing| 71380|   s0001|             Staff|1958|
+| 10018|   d005|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|    0|         |       development| 55881|   e0003|   Senior Engineer|1954|
+| 10018|   d004|       e0003| 6/19/1954|  Kazuhide|       Peha|  F|  4/3/1987|             4|                      B|    0|         |        Production| 55881|   e0003|   Senior Engineer|1954|
++------+-------+------------+----------+----------+-----------+---+----------+--------------+-----------------------+-----+----------+------------------+------+--------+------------------+----+
+only showing top 20 rows
+
+root
+ |-- emp_no: long (nullable = true)
+ |-- dept_no: string (nullable = true)
+ |-- emp_title_id: string (nullable = true)
+ |-- birth_date: string (nullable = true)
+ |-- first_name: string (nullable = true)
+ |-- last_name: string (nullable = true)
+ |-- sex: string (nullable = true)
+ |-- hire_date: string (nullable = true)
+ |-- no_of_projects: long (nullable = true)
+ |-- Last_performance_rating: string (nullable = true)
+ |-- left_: long (nullable = true)
+ |-- last_date: string (nullable = true)
+ |-- dept_name: string (nullable = true)
+ |-- salary: long (nullable = true)
+ |-- title_id: string (nullable = true)
+ |-- title: string (nullable = true)
+ |-- age: long (nullable = true)
+
